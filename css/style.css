@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-image: linear-gradient( to bottom, black 80%, white);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+}
+ 
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 20px;
+}
+ 
+
+
+.logoFisioactive{
+    width: 140px;
+    height: 110px;
+    border: solid white 2px;
+    padding: 1px;
+    margin: 12px 20px;
+}
+
+
+.nav__ul{
+display: flex;
+flex-direction: row;
+
+}
+
+.enlace__nav{
+
+ display: inline-block;
+ margin: 0px 14px;
+ border: 2px solid white;
+ padding: 10px;
+ border-radius: 10px 10px;
+}
+
+.enlace__nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+h1{
+    display: flex;
+    font-weight: bold;
+    border: black;
+    justify-content: center;
+    margin: 1rem 0px;
+}
+
+main h2{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0px;
+}
+
+.divContainer{
+display: flex;
+border: black 1px solid;
+width: 100%;
+
+}
+
+.divContainer__texto{
+display: flex;
+flex-direction: column;
+max-width: 100%;
+
+
+}
+
+.divContainer__texto p{
+    text-align: start;
+    margin: 16px 16px;
+}
+
+.caja__menu--lista{
+display: flex;
+flex-direction: column;
+text-align: justify;
+margin: 20px 50px;
+}
+
+.caja__menu--lista span{
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.divContainer__imagen{
+padding: 0px 20px;
+margin: 16px 2px ;
+flex-direction: column;
+text-align: end;
+}
+
+.imgBody{
+    width: 400px;
+    height: 200px;
+}
+
+.cajaFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 20px;
+}
+
+.cajaFooter__redes{
+    text-align: center;
+}
+
+/* QUIENES SOMOS CSS*/
+
+.div__quienesSomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+
+.presentacion__{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 400px;
+}
+
+.presentacion__texto{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    max-width: 100%;
+}
+
+.textoPresentacion{
+    text-align: center;
+}
+
+.licenciado{
+    text-decoration: underline;
+}
+
+.imagenPresentacion{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px 5px;
+    box-shadow: 1px 1px 2px 2px white;
+    margin-bottom: 100px;
+    
+    
+
+}
+
+.cajaFooter__imagen{
+    margin: 10px 0;
+}
+
+.cajaFooter__todos{
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.paddingFooter{
+    padding: 12vh;
+    
+}
+
+.textoFooter{
+    
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+
+.logoFooter{
+    margin-bottom: 1rem;
+}
+
+.comentario{
+    height: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.formulario{
+    padding: 15px 10px;
+    margin: 10px 300px 10px 30px;
+      
+}
+
+.formulario__1{
+    padding: 15px 0px 15px 20px;
+}
+
+/* SERVICIOS */
+
+.containerServicios{
+    width: 20rem;
+    height: 20rem;
+    display:inline-block;
+    margin: 0 50px;
+}
+
+.cardServicios{
+    display: inline-block;
+    width: 25vw ;
+    height: 50vh;
+    margin: 40px 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.cardServicios:hover{
+    box-shadow: 5 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.imagenServicio{
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+
+    
+}
+
+.contenidoCard{
+    color: black;
+    text-align: center;
+}
+
+/* SECCION DONDE ESTAMOS MAPA*/
+
+.mapa{
+    margin: 100px 40px;
+}
+
+
+/* RESPONSIVE CON ESTRATEGIA MOBILE LAST*/
+
+@media (max-width: 768px) {
+    /*Tamaño mediano*/
+     
+    /* INDEX */
+    .body nav {
+               display: flex;
+               flex-direction: column;
+          }
+    .divContainer {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto ;
+            justify-content: center;
+            max-width: 100%;
+            
+        }
+
+    .divContainer__imagen{
+            text-align: center;
+        }
+           
+    
+    /* QUIENES SOMOS*/
+
+.div__quienesSomos{
+    margin: 100px 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: max-content;
+    display: flex;
+    
+}
+
+.presentacion__{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.presentacion__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    width: max-content;
+}
+
+.textoPresentacion {
+    text-align: center;
+    width: 100vw;
+}
+
+.presentacion__imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+}
+
+@media (max-width: 420px) {
+/*Tamaño chico*/
+.body{
+    font-size: 16px;
+}
+
+
+.body nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+.nav__ul{
+    flex-direction: column;
+    margin: 12px 6px;
+}
+
+main h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 0px;
+    align-items: center;
+}
+
+.divContainer__texto p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+
+/* QUIENES SOMOS*/
+
+.div__quienesSomos{
+    margin: 100px 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: max-content;
+    display: flex;
+    
+}
+
+.presentacion__{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.presentacion__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    width: max-content;
+}
+
+.textoPresentacion {
+    text-align: center;
+    width: 100vw;
+}
+
+.presentacion__imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+}
