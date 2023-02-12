@@ -149,10 +149,14 @@ text-align: end;
 
 .textoPresentacion{
     text-align: center;
+    width: 19rem;
+    margin-right: 10rem
 }
 
 .licenciado{
     text-decoration: underline;
+    width: 19rem;
+    margin-right: 10rem;
 }
 
 .imagenPresentacion{
